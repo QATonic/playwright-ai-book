@@ -1,0 +1,34 @@
+{
+  "name": "playwright-ai-book",
+  "version": "1.0.0",
+  "description": "Companion code for the book 'Playwright + AI: From Zero to Shipping in a Weekend'",
+  "author": "Santosh Balbhim Karad <santosh@example.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "gen": "ts-node scripts/gen-tests.ts",
+    "explore": "ts-node scripts/explore.ts",
+    "mcp": "npx @playwright/mcp@latest --port 8931",
+    "codegen": "playwright codegen",
+    "cache:clear": "rm -rf .ai-cache && echo 'AI cache cleared'"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "latest",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^20.19.41",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

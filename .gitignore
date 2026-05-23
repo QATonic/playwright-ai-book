@@ -1,0 +1,26 @@
+node_modules/
+.env
+.env.local
+*.log
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+
+# AI helpers
+.ai-cache/
+heal-report.json
+
+# Auth state
+auth.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/settings.json
+.idea/
+.claude/
